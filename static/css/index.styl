@@ -1,0 +1,124 @@
+@import "reset.css"
+#app
+  width  100%
+  height  100%
+  #content
+    //background-color #9a6e3a
+    width  100%
+    height 100%
+    padding-bottom 50px
+    box-sizing border-box
+    .main
+      display none
+      &.show
+        display block
+    #home
+      #header
+        position fixed
+        width 100%
+        background-color #ffffff
+        z-index 99
+        .header_search
+          height 100%
+          width 100%
+          padding-bottom 10px
+          img
+            width 80px;
+            height 20px;
+            margin 8px 12px -4px 11px
+          .search
+            display inline-block
+            background #ededed
+            height 25px
+            .iconfont
+              position absolute
+              top 11px
+              color green
+            p
+              margin 0px 5px 0px 15px
+              text-align center
+              line-height 25px
+          .login
+            width 40px
+            height 20px
+            display inline-block
+            text-align center
+            line-height 20px
+            font-size 14px
+            color #b4282d
+            border 1px solid #eee
+            border-radius 3px
+        .nav
+          display inline-block
+          .nav-list
+            display inline-block
+            li
+              float left
+              margin 0px 10px 5px 15px
+              color #9a6e3a
+          span
+            position absolute
+            top 40px
+            right 10px
+      .swiper-container
+        padding 70px 0px 0px 0px
+        width 100%
+        height 200px
+        img
+          width 100%
+          height 100%
+      .brand
+        padding 10px
+        span
+          font-size 14px
+          margin 0px 5px 0px 10px
+          .iconfont
+            font-size 14px
+      .category
+        display flex
+        flex-wrap wrap
+        background-color #fff
+        .categoryItem
+          width 20%
+          height 72px
+          display flex
+          align-items center
+          justify-content space-around
+          flex-direction column
+          img
+            width 50px
+            height 50px
+          span
+            font-size 13px
+            color #02a774
+      .card_boon
+        margin-top 10px
+        .title
+          display block
+          font-size 18px
+          color red
+          text-align center
+  #footer
+    position fixed
+    left 0
+    bottom 0
+    width 100%
+    height 50px
+    display flex
+    .footerItem
+      width 25%
+      height 100%
+      display flex
+      flex-direction column
+      align-items center
+      justify-content center
+      color #7e8c8d
+      &.active
+        color green
+      .iconfont
+        font-size 22px
+      span
+        font-size 12px
+
+
+

@@ -1,0 +1,150 @@
+@import "reset.css";
+#app {
+  width: 100%;
+  height: 100%;
+}
+#app #content {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+#app #content .main {
+  display: none;
+}
+#app #content .main.show {
+  display: block;
+}
+#app #content #home #header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+}
+#app #content #home #header .header_search {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 10px;
+}
+#app #content #home #header .header_search img {
+  width: 80px;
+  height: 20px;
+  margin: 8px 12px -4px 11px;
+}
+#app #content #home #header .header_search .search {
+  display: inline-block;
+  background: #ededed;
+  height: 25px;
+}
+#app #content #home #header .header_search .search .iconfont {
+  position: absolute;
+  top: 11px;
+  color: #008000;
+}
+#app #content #home #header .header_search .search p {
+  margin: 0px 5px 0px 15px;
+  text-align: center;
+  line-height: 25px;
+}
+#app #content #home #header .header_search .login {
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  color: #b4282d;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+#app #content #home #header .nav {
+  display: inline-block;
+}
+#app #content #home #header .nav .nav-list {
+  display: inline-block;
+}
+#app #content #home #header .nav .nav-list li {
+  float: left;
+  margin: 0px 10px 5px 15px;
+  color: #9a6e3a;
+}
+#app #content #home #header .nav span {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+#app #content #home .swiper-container {
+  padding: 70px 0px 0px 0px;
+  width: 100%;
+  height: 200px;
+}
+#app #content #home .swiper-container img {
+  width: 100%;
+  height: 100%;
+}
+#app #content #home .brand {
+  padding: 10px;
+}
+#app #content #home .brand span {
+  font-size: 14px;
+  margin: 0px 5px 0px 10px;
+}
+#app #content #home .brand span .iconfont {
+  font-size: 14px;
+}
+#app #content #home .category {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+#app #content #home .category .categoryItem {
+  width: 20%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#app #content #home .category .categoryItem img {
+  width: 50px;
+  height: 50px;
+}
+#app #content #home .category .categoryItem span {
+  font-size: 13px;
+  color: #02a774;
+}
+#app #content #home .card_boon {
+  margin-top: 10px;
+}
+#app #content #home .card_boon .title {
+  display: block;
+  font-size: 18px;
+  color: #f00;
+  text-align: center;
+}
+#app #footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+#app #footer .footerItem {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #7e8c8d;
+}
+#app #footer .footerItem.active {
+  color: #008000;
+}
+#app #footer .footerItem .iconfont {
+  font-size: 22px;
+}
+#app #footer .footerItem span {
+  font-size: 12px;
+}
