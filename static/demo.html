@@ -1,189 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/common.css" />
-  <title>网易严选</title>
-</head>
-
-<body>
-<header id="head">
-  <!-- 页面头 -->
-  <div class="head">
-    <div class="center clearfix">
-      <div class="left">
-        好的生活，没那么贵
+<section class="cart-container">
+  <header class="cart-header">
+    <span>购物车</span>
+    <a href="javascript:void(0)">领券</a>
+  </header>
+  <div class="cart-main">
+    <div class="cart-list">
+      <div class="cart-item">
+        <i class="iconfont icon-circle"></i>
+        <span>30天无忧退货</span>
       </div>
-      <div class="right">
-        <ul>
-          <li>
-            <a href="#" class="noborder">登录</a>
-          </li>
-          <li>
-            <a href="#" class="noborder margin">注册</a>
-          </li>
-          <li>
-            <a href="#">严选态度</a>
-          </li>
-          <li>
-            <a href="#">企业采购</a>
-          </li>
-          <li class="customer">
-            <a href="#">客户服务</a>
-            <ul>
-              <li>
-                <a href="#">帮助中心</a>
-              </li>
-              <li>
-                <a href="#">在线客服</a>
-              </li>
-              <li class="phone">
-                <a href="#">电话客服</a>
-                <div>
-                  <p>400-0368-163</p>
-                  <p>9:00-22:00</p>
-                </div>
-              </li>
-              <li>
-                <a href="#" class="noborder">商务合作</a>
-              </li>
-            </ul>
-          </li>
-          <li class="down">
-            <a href="#">下载APP</a>
-            <div>
-              <img src="images/down.png" alt="">
-              <span>扫码下载 首单立减8元</span>
-            </div>
-          </li>
-        </ul>
+      <div class="cart-item">
+        <i class="iconfont icon-circle"></i>
+        <span>48小时无忧退款</span>
+      </div>
+      <div class="cart-item">
+        <i class="iconfont icon-circle"></i>
+        <span>满88元免邮费</span>
+      </div>
+    </div>
+    <img class="cart-img" src="http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-d6193bd6e4.png" alt="cartImg">
+    <div class="add-loginBtn">
+      <span class="goto-add">去添加点什么吧</span>
+      <div class="login-btn" @click="$router.push('/profile')">
+        <a href="javascript:void(0)">登录</a>
       </div>
     </div>
   </div>
-  <!-- 搜索部分 -->
-  <div class="search">
-    <div class="center clearfix">
-      <h1>
-        <a href="#">
-          <img src="images/logo.gif" alt="网易严选">
-        </a>
-      </h1>
-      <div class="searchBox right">
-        <input type="text" value="情侣牛皮靴">
-        <a href="javascript:;"></a>
-      </div>
-    </div>
-  </div>
-  <!-- 导航 -->
-  <nav class="nav">
-    <div class="center clearfix">
-      <a class="logo" href="#">
-        <img src="images/smallLogo.gif" alt="">
-      </a>
-      <ul class="navBar">
-        <li class="active">
-          <a href="#">首页</a>
-        </li>
-        <li>
-          <a href="#">居家</a>
-        </li>
-        <li>
-          <a href="#">餐厨</a>
-        </li>
-        <li>
-          <a href="#">配件</a>
-        </li>
-        <li>
-          <a href="#">服装</a>
-        </li>
-        <li>
-          <a href="#">洗护</a>
-        </li>
-        <li>
-          <a href="#">婴童</a>
-        </li>
-        <li>
-          <a href="#">杂货</a>
-        </li>
-        <li>
-          <a href="#">饮食</a>
-        </li>
-        <li>
-          <a href="#">其他</a>
-        </li>
-        <li class="separate">|
-        </li>
-        <li>
-          <a href="#">专题</a>
-        </li>
-        <li>
-          <a href="#">甄选家</a>
-        </li>
-      </ul>
-      <div class="cartWrap">
-        <i>0</i>
-        <div class="cart">
-          <div class="list">
-            <ul>
-              <li>
-                <a href="#" class="img">
-                  <img src="images/img_01-1.png" />
-                </a>
-                <div class="message">
-                  <p>
-                    <a href="#">领尖扣商务免烫衬衫</a>
-                  </p>
-                  <p>白色 Lx 1</p>
-                </div>
-                <div class="price">￥219.00</div>
-                <div class="close">X</div>
-              </li>
-            </ul>
-            <div class="scrollBar">
-                                <span class="topBtn">
-
-                                </span>
-              <div class="slideWrap">
-                <div class="slide"></div>
-              </div>
-              <span class="bottomBtn"></span>
-            </div>
-          </div>
-          <div class="total">
-            商品合计：
-            <span>￥751.00</span>
-            <a href="#">去购物车结算</a>
-          </div>
-        </div>
-      </div>
-      <div class="login">
-        <a href="#">登录</a>
-        <a href="#">注册</a>
-      </div>
-
-    </div>
-    <div class="subNav">
-      <ul style="display:block;">
-        <li>
-          <a href="#">
-            <img src="images/nav_01.png" alt="" />1被枕</a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/nav_02.png" alt="" />床品件套</a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/nav_03.png" alt="" />床垫</a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/nav_04.png" alt="" />地垫</a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/nav_05.png" alt="" />家具</a>
-        </li>
+</section>
